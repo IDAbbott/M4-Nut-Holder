@@ -14,14 +14,19 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "25427777-412e-43a5-941a-32b400229859",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.14732142857142858,
-            "y": 0.3713592233009708,
+            "x": 0.13125,
+            "y": 0.3786407766990291,
             "uniqueID": "bb529f86-07ed-4f06-a6bf-84e57516ca77",
             "ioValues": [
                 {
@@ -80,7 +85,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 50
+                    "ioValue": 45
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -98,7 +103,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 40
+                    "ioValue": 45
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -106,23 +111,83 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.29375,
-            "y": 0.308252427184466,
+            "x": 0.2830357142857143,
+            "y": 0.2766990291262136,
             "uniqueID": "5b33f469-3151-44c9-94fe-4df25f492507",
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": ""
+                    "ioValue": "bb529f86-07ed-4f06-a6bf-84e57516ca77"
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 30
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Fusion",
+            "name": "Fusion",
+            "x": 0.4598214285714286,
+            "y": 0.4684466019417476,
+            "uniqueID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "5b33f469-3151-44c9-94fe-4df25f492507"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "1d2ca835-c162-4a38-9e98-b2083356e522"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "ca3d0fe3-efdc-4f39-ac99-e046afb087df"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Fusion"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.5473214285714286,
+            "y": 0.7014563106796116,
+            "uniqueID": "578a975f-60bc-4f10-a5e7-2993945c99f3",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "M4-Nut-Holder"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STEP"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STEP",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "M4-Nut-Holder"
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "bb529f86-07ed-4f06-a6bf-84e57516ca77",
+            "ap2ID": "5b33f469-3151-44c9-94fe-4df25f492507"
+        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
@@ -136,10 +201,45 @@
             "ap2Primary": true,
             "ap1ID": "e0da8838-559a-4ae4-b840-65732a727ea9",
             "ap2ID": "ca3d0fe3-efdc-4f39-ac99-e046afb087df"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": "ca3d0fe3-efdc-4f39-ac99-e046afb087df",
+            "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": "1d2ca835-c162-4a38-9e98-b2083356e522",
+            "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": "5b33f469-3151-44c9-94fe-4df25f492507",
+            "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
+            "ap2ID": "25427777-412e-43a5-941a-32b400229859"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
+            "ap2ID": "578a975f-60bc-4f10-a5e7-2993945c99f3"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
