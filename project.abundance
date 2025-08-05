@@ -103,7 +103,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 45
+                    "ioValue": 43
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
