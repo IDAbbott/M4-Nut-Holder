@@ -97,22 +97,122 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 30,
-          "currentEquation": "30"
+          "ioValue": 30
         }
       ]
     },
     {
-      "atomType": "Fusion",
-      "name": "Fusion",
-      "x": 0.6267482517482518,
-      "y": 0.625531914893617,
-      "uniqueID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
+      "atomType": "Export",
+      "name": "Export",
+      "x": 0.7473776223776224,
+      "y": 0.7531914893617021,
+      "uniqueID": "578a975f-60bc-4f10-a5e7-2993945c99f3",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STEP"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "M4-Nut-Holder"
+        }
+      ],
+      "type": "STEP",
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "M4-Nut-Holder"
+    },
+    {
+      "atomType": "Rectangle",
+      "name": "Rectangle",
+      "x": 0.11013986013986014,
+      "y": 0.3361702127659575,
+      "uniqueID": "d89d533f-3b51-479c-afa1-81650e6e5ca1",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 20
+        },
+        {
+          "name": "y length",
+          "ioValue": 12,
+          "currentEquation": "12"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "name": "Move",
+      "x": 0.20629370629370627,
+      "y": 0.3382978723404256,
+      "uniqueID": "a3006c69-8541-42ca-9d61-629cc4aaab2f",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 6.5,
+          "currentEquation": "6.5"
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "name": "Difference",
+      "x": 0.3076923076923077,
+      "y": 0.25531914893617025,
+      "uniqueID": "ceb37b69-cc90-469d-8abc-fe4ed36e0ee8",
+      "ioValues": []
+    },
+    {
+      "atomType": "Assembly",
+      "name": "Assembly",
+      "x": 0.5804195804195804,
+      "y": 0.49148936170212765,
+      "uniqueID": "b4cb0236-a609-43a3-8187-07edd4233265",
       "ioValues": [
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "extrude-58dd4a3f8407c3b410b41386a67038401d70e65afd502420c9113e5d25a54b56",
+            "geometry": "extrude-4db61345187524237d5ab6a417c8bd585a8063efa57179e8a61d322f384f238e",
+            "dimension": "3D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "extrude-5a2ef0a83afc3dc2952f560722b54aaba5ae6adac14699ee9934bb4c4afa1b04",
             "dimension": "3D",
             "tags": [],
             "plane": {
@@ -162,110 +262,8 @@
             "color": "#aad7f2",
             "bom": []
           }
-        },
-        {
-          "name": "Shape 4",
-          "ioValue": {
-            "geometry": "extrude-5a2ef0a83afc3dc2952f560722b54aaba5ae6adac14699ee9934bb4c4afa1b04",
-            "dimension": "3D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#aad7f2",
-            "bom": []
-          }
-        }
-      ],
-      "unionType": "Fusion"
-    },
-    {
-      "atomType": "Export",
-      "name": "Export",
-      "x": 0.7473776223776224,
-      "y": 0.7531914893617021,
-      "uniqueID": "578a975f-60bc-4f10-a5e7-2993945c99f3",
-      "ioValues": [
-        {
-          "name": "File Type",
-          "ioValue": "STEP"
-        },
-        {
-          "name": "Resolution (dpi)",
-          "ioValue": 96
-        },
-        {
-          "name": "Part Name",
-          "ioValue": "M4-Nut-Holder"
-        }
-      ],
-      "type": "STEP",
-      "resolution": 96,
-      "importIndex": 0,
-      "partName": "M4-Nut-Holder"
-    },
-    {
-      "atomType": "Rectangle",
-      "name": "Rectangle",
-      "x": 0.11013986013986014,
-      "y": 0.3361702127659575,
-      "uniqueID": "d89d533f-3b51-479c-afa1-81650e6e5ca1",
-      "ioValues": [
-        {
-          "name": "x length",
-          "ioValue": 20,
-          "currentEquation": "20"
-        },
-        {
-          "name": "y length",
-          "ioValue": 10
         }
       ]
-    },
-    {
-      "atomType": "Move",
-      "name": "Move",
-      "x": 0.20629370629370627,
-      "y": 0.3382978723404256,
-      "uniqueID": "a3006c69-8541-42ca-9d61-629cc4aaab2f",
-      "ioValues": [
-        {
-          "name": "xDist",
-          "ioValue": 0
-        },
-        {
-          "name": "yDist",
-          "ioValue": 4.5,
-          "currentEquation": "4.5"
-        },
-        {
-          "name": "zDist",
-          "ioValue": 0,
-          "currentEquation": "0"
-        }
-      ]
-    },
-    {
-      "atomType": "Difference",
-      "name": "Difference",
-      "x": 0.3076923076923077,
-      "y": 0.25531914893617025,
-      "uniqueID": "ceb37b69-cc90-469d-8abc-fe4ed36e0ee8",
-      "ioValues": []
     }
   ],
   "allConnectors": [
@@ -291,31 +289,19 @@
       "ap1Name": "geometry",
       "ap2Name": "Shape 3",
       "ap1ID": "ca3d0fe3-efdc-4f39-ac99-e046afb087df",
-      "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+      "ap2ID": "b4cb0236-a609-43a3-8187-07edd4233265"
     },
     {
       "ap1Name": "geometry",
-      "ap2Name": "Shape 4",
+      "ap2Name": "Shape 2",
       "ap1ID": "1d2ca835-c162-4a38-9e98-b2083356e522",
-      "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
+      "ap2ID": "b4cb0236-a609-43a3-8187-07edd4233265"
     },
     {
       "ap1Name": "geometry",
       "ap2Name": "Shape 1",
       "ap1ID": "5b33f469-3151-44c9-94fe-4df25f492507",
-      "ap2ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "number or geometry",
-      "ap1ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
-      "ap2ID": "25427777-412e-43a5-941a-32b400229859"
-    },
-    {
-      "ap1Name": "geometry",
-      "ap2Name": "geometry",
-      "ap1ID": "a443e1bc-e3f5-40a4-99d2-655ed9d87ef0",
-      "ap2ID": "578a975f-60bc-4f10-a5e7-2993945c99f3"
+      "ap2ID": "b4cb0236-a609-43a3-8187-07edd4233265"
     },
     {
       "ap1Name": "geometry",
@@ -334,6 +320,18 @@
       "ap2Name": "geometry",
       "ap1ID": "ceb37b69-cc90-469d-8abc-fe4ed36e0ee8",
       "ap2ID": "5b33f469-3151-44c9-94fe-4df25f492507"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "b4cb0236-a609-43a3-8187-07edd4233265",
+      "ap2ID": "578a975f-60bc-4f10-a5e7-2993945c99f3"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "number or geometry",
+      "ap1ID": "b4cb0236-a609-43a3-8187-07edd4233265",
+      "ap2ID": "25427777-412e-43a5-941a-32b400229859"
     }
   ],
   "unitsKey": "MM",
